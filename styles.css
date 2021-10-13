@@ -1,0 +1,475 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*lightblue color: rgb(69, 148, 215);*/
+/*darkblue color: rgb(55, 75, 112);*/
+
+.landingPage_wrapper {
+	background-image: url(images/stencilbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+.sisu_stencil {
+	background-image: url(images/stencil.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.logo {
+	background-image: url(images/sisuLogo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	width: 13vw;
+	height: 5vh;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+
+/* --landing Text-- */
+
+.landingText {
+	position: absolute;
+	z-index: 10;
+	top: 35vh;
+	left: 10vw;
+	width: 40vw;
+}
+
+.landingText h1 {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 55px;
+	color: rgb(55, 75, 112);
+}
+
+.landingText p {
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 32px;
+	color: grey;
+	padding-left: 100px;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+}
+
+.landingText a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 20px;
+	padding-left: 100px;
+	color: rgb(55, 75, 112);
+	transition: 0.3s;
+}
+
+.landingText a:hover {
+	color: rgb(69, 148, 215);
+	margin-left: 0px;
+}
+
+
+
+/* --Navbar-- */
+.menu-main {
+	margin-top: -2px;
+}
+
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+#container {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.active1#container {
+	background-color: rgb(248, 248, 248);
+}
+.active2#container {
+	background-color: rgb(248, 248, 248);
+}
+.active3#container {
+	background-color: rgb(248, 248, 248);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    display: block;
+    padding: 0.9em 1.75em;
+	margin-left: 10px;
+}
+
+nav li:hover a {
+	color: rgb(69, 148, 215);
+}
+
+.menu-sub {
+    position: absolute;
+	left: 0;
+    width: 100vw;
+    display: none;
+    color: rgba(255, 255, 255, 0);
+    padding: 2em;
+
+}
+
+
+/* menuExplore */
+#menuExplore {
+	display: block;
+	background:rgba(240, 240, 240, 0);
+	visibility: hidden;
+}
+
+#menuExplore a {
+	color: white;
+	visibility: hidden;
+}
+
+.active#menuExplore {
+    display: block;
+	visibility: visible;
+	background:rgb(248, 248, 248);
+	color: rgb(55, 75, 112);
+}
+
+.active#menuExplore a {
+	visibility: visible;
+	color: rgb(55, 75, 112);
+}
+
+
+/* menuWork */
+#menuWork {
+	display: block;
+	background:rgba(240, 240, 240, 0);
+	visibility: hidden;
+}
+
+#menuWork a {
+	color: white;
+	visibility: hidden;
+}
+
+.active#menuWork {
+    display: block;
+	visibility: visible;
+	background:rgb(248, 248, 248);
+	color: rgb(55, 75, 112);
+}
+
+.active#menuWork a {
+	visibility: visible;
+	color: rgb(55, 75, 112);
+}
+
+
+/* menuWorkUs */
+#menuWorkUs {
+	display: block;
+	background:rgba(240, 240, 240, 0);
+	visibility: hidden;
+}
+
+#menuWorkUs a {
+	color: white;
+	visibility: hidden;
+}
+
+.active#menuWorkUs {
+    display: block;
+	visibility: visible;
+	background:rgb(248, 248, 248);
+	color: rgb(55, 75, 112);
+}
+
+.active#menuWorkUs a {
+	visibility: visible;
+	color: rgb(55, 75, 112);
+}
+
+
+
+/*
+nav li:hover .menu-sub {
+    display: block;
+}
+*/
+
+.menu-sub li {
+    display: block;
+}
+
+.menu-sub a {
+    padding: 0; 
+    margin-bottom: 0.35em;
+	transition: 0.3s;
+}
+
+.menu-sub a:hover {
+    text-decoration: underline;
+	text-decoration-color: rgb(69, 148, 215);
+}
+
+.menu-category {
+    margin: 2.5em 0 0.5em;
+}
+
+.menu-category:first-of-type {
+    margin-top: 0;
+}
+
+.menu-col-1,
+.menu-col-2,
+.menu-col-3,
+.menu-col-4 {
+    float: left;
+}
+
+.menu-col-1 {
+    width: 25%;
+}
+
+
+/*-- Work We Do Section --*/
+
+.wwd_wrapper {
+	width: 100vw;
+	height: 100vh;
+	background: rgb(232, 235, 238);
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.wwd_text {
+	width: 80%;
+	height: 20%;
+	margin-top: 7%;
+	background: rgb(232, 235, 238);
+	display: flex;
+	flex-direction: column;
+}
+
+.wwd_text h2 {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 38px;
+	line-height: 55px;
+	color: rgb(55, 75, 112);
+}
+
+.wwd_text p {
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 32px;
+	color: grey;
+	margin-top: 0vh;
+	margin-bottom: 3vh;
+}
+
+.card_wrapper {
+	width: 80%;
+	height: 50%;
+	margin-top: 0%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card_container {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.card_image {
+	width: 100%;
+	height: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card_text {
+	width: auto;
+	height: 50%;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0% 5%;
+}
+
+.card_button {
+	width: 50%;
+	height: 20%;
+	background: lightslategrey;
+}
+
+.eng {
+	background-image: url(images/engineering.jpg);
+}
+
+.auto {
+	background-image: url(images/automation.jpg);
+}
+
+.sec {
+	background-image: url(images/security.jpg);
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, rgba(57, 117, 170, 0.637) 0%, rgba(77, 160, 233, 0.582) 100%);
+}
+
+.eng h1, .sec h1, .auto h1 {
+	color: white;
+	font-size: 3rem;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+.card {
+	color: slategray;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-bottom: 5%;
+	line-height: 1.7rem;
+}
+
+.button {
+	background-color: white;
+	border: solid rgb(69, 148, 215) 2px;
+	color: rgb(69, 148, 215);
+	padding: 3% 6%;
+	font-size: 1rem;
+	transition: 0.3s;
+}
+
+.button:hover {
+	background-color: rgb(69, 148, 215);
+	color: white;
+
+}
+
+
+
+/*-- Our Company --*/
+
+.company_wrapper {
+	width: 100vw;
+	height: 100vh;
+	background:rgb(55, 75, 112);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.image_company {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/buildinggrey.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.company_text {
+	width: 40%;
+	height: 80%;
+	margin-top: 10%;
+	margin-left: 50%;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	color: lightgray;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	font-weight: 300;
+}
+
+.company_text h1 {
+	margin-bottom: 5%;
+	text-align: right;
+	color: white;;
+}
+
+/* --Footer-- */
+
+.footer_wrapper {
+	width: 96vw;
+	height: 30vh;
+	background: white;
+	padding: 5% 5%;
+	display: flex;
+}
+
+.footer_contact {
+	width: 15%;
+	height: 100%;
+}
+
+.footer_contact h3 {
+	font-size: 1rem;
+	color: #444;
+	font-weight: 300;
+	padding-top: 5%;
+}
+
+.site_map_col {
+	width: 20%;
+	height: 60%;
+	padding: 0% 2.5%;
+}
+
+.site_map_col li {
+	list-style: none;
+}
+
+.site_map_col a {
+	line-height: 3rem;
+	text-decoration: none;
+	color: #444;
+	font-weight: 300;
+}
+
+.site_map_col a:hover {
+	text-decoration: underline;
+	color: rgb(69, 148, 215);
+	text-decoration-color: rgb(69, 148, 215);
+}
